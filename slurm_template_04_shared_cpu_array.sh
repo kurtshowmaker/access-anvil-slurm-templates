@@ -1,8 +1,8 @@
 #!/bin/bash
 
 #SBATCH --job-name=MY_JOB    # Set job name
-#SBATCH --partition=compute  # Set the partition 
-#SBATCH --qos=batch          # Set the QoS
+#SBATCH --partition=shared  # Set the partition 
+#SBATCH --qos=cpu          # Set the QoS
 #SBATCH --nodes=1            # Do not change unless you know what your doing (it set the number of nodes (do not change for non-mpi jobs))
 #SBATCH --ntasks=1           # Do not change unless you know what your doing (it sets the number of tasks (do not change for non-mpi jobs))
 #SBATCH --cpus-per-task=4    # Set the number of CPUs per task (change to number of CPU/threads utilized in run script/programs) [limited to 70 CPUs per node] 
